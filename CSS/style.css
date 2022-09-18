@@ -72,6 +72,10 @@ header .menu i{
     min-height: 150px;
 }
 
+aside{
+    display: none;
+}
+
 .c3{
     height: auto;
 }
@@ -108,6 +112,7 @@ footer{
 
 @media (min-width:600px){
     .c1{
+        display: flex;
         width: 10%;
         height: 100rem;
         position: fixed;
@@ -117,6 +122,19 @@ footer{
         width: 90%;
         margin-left: 10%;
     }
+
+    header .menu{
+        display: none;
+    }
+    
+    header .menu i{
+        background-color: springgreen;
+        display:flex;
+        margin: 0.7rem;
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
     footer{
         width: 90%;
         position: absolute;
