@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    min-height: 100%;
+    position: relative;
+}
+body{
+    margin-bottom: 3rem;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header,
+main,
+aside,
+section
+{
+    width: 100%;
+}
+
+/*ENCABEZADO*/
+header{
+    background-color: yellowgreen;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav{
+    display: flex;
+    background-color: yellow;
+    height: 4rem;
+}
+
+.nav-container1{
+    display:flex;
+}
+
+header nav .logo{
+    background-color: violet;
+    width: 4rem;
+    height: 4rem;
+    display: inline-block;
+}
+
+header nav .title{
+    background-color: teal;
+    width: 10rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav .title h1{
+    display: flex;
+}
+
+.menu-container{
+    background-color: steelblue;
+    display: flex;
+    width: 5rem;
+    height: 4rem;
+    position: absolute;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-container i{
+    font-size: 3rem;
+}
+
+/*CONTENIDO*/
+main{
+    background-color: wheat;
+    height: 100rem;
+}
+
+aside{
+    display: none;
+}
+
+
+
+section{
+    background-color: turquoise;
+}
+
+/*pie de página*/
+footer{
+    background-color: violet;
+    width: 100%;
+    height: 3rem;
+    position: absolute;
+    bottom: 0;
+}
+
+@media (min-width: 600px){
+    .menu-container{
+        display: none;
+    } 
+    aside{
+        width: 6%;
+        display: block;
+    }
+    section{
+        width: 94%;
+    }
+}
+
+@media (min-width: 800px){
+    .menu-container{
+        display: none;
+    }    
+    aside{
+        width: 15%;
+        display: block;
+    }
+    section{
+        width: 85%;
+    }
+
+}
