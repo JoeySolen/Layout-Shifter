@@ -40,6 +40,10 @@ header .identity .title h1{
     text-align: center;
 }
 
+.menu-list{
+    display: none;
+}
+
 header .menu{
     background-color: steelblue;
     position: absolute;
@@ -123,6 +127,10 @@ footer{
         margin-left: 10%;
     }
 
+    .menu-list{
+        display: flex;
+    }
+
     header .menu{
         display: none;
     }
@@ -149,8 +157,28 @@ footer{
         height: 97rem;
     }
     .c2{
+        display: flex;
         width: 85%;
+        height: 350px;
         margin-left: 15%;
+    }
+
+    .c3{
+        width: 50%;
+        order: 2;
+    }
+
+    .c4{
+        width: 50%;
+        order: 1;
+    }
+    .c5{
+        display: block;
+        width: 65%;
+    }
+    .c6{
+        display: block;
+        width: 35%;
     }
     footer{
         width: 85%;
