@@ -84,9 +84,10 @@ main{
 aside{
     background-color: tomato;
 }
-section{
+/* section{
     background-color: steelblue;
-}
+
+} */
 
 section .banner{
     background-color: aliceblue;
@@ -130,10 +131,15 @@ section .banner h2{
 
 footer{
     background-color: slateblue;
+    display: block;
     position: absolute;
     bottom: 0;
-    width: 100%;
     height: 3rem;
+    width: 100%;
+}
+
+footer .footer-description h4{
+    display: block;
 }
 
 /*FIN PIE DE PÁGINA*/
