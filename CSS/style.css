@@ -3,12 +3,23 @@
     margin: 0;
     padding: 0;
 }
+:root{
+	--primary-color: #101824;
+	--secundary-color: #17283d;
+    --tertiary-color:#ebf4ff;
+	--header-size: 4rem;
+	--font: 1.8rem;
+}
+
 html{
     font-size: 62.5%;
     position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 header{
-    background-color: tomato;
+    background-color: var(--primary-color);
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -19,12 +30,12 @@ header{
 }
 
 header .identity{
-    background-color: blue;
+    /* background-color: blue; */
     display: flex;
 }
 
 header .identity .logo{
-    background-color: turquoise;
+    /* background-color: turquoise; */
     width: 5rem;
 }
 
@@ -34,10 +45,11 @@ header .identity .title{
 }
 
 header .identity .title h1{
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     display: flex;
     margin: 1rem;
     text-align: center;
+    color: aliceblue;
 }
 
 .menu-list{
@@ -45,7 +57,7 @@ header .identity .title h1{
 }
 
 header .menu{
-    background-color: steelblue;
+    background-color: var(--secundary-color);
     position: absolute;
     right: 0;
     width: 5rem;
@@ -53,11 +65,12 @@ header .menu{
 }
 
 header .menu i{
-    background-color: springgreen;
+    /* background-color: springgreen; */
     display:flex;
     margin: 0.7rem;
     font-size: 3.5rem;
     text-align: center;
+    color: var(--tertiary-color);
 }
 
 .container{
@@ -85,7 +98,7 @@ aside{
 }
 
 .c1{
-    background-color: yellowgreen;
+    background-color: var(--secundary-color);
 }
 
 .c2{
@@ -104,31 +117,40 @@ aside{
     background-color: violet;
 }
 
+.c6{
+    background-color: var(--tertiary-color);
+    height: 20rem;
+}
+
 footer{
-    background-color: tomato;
+    background-color: var(--secundary-color);
     width: 100%;
     position: relative;
+    display: flex;
     min-block-size: 150px;
     min-height: 3rem;
     right: 0;
     bottom: 0;
 }
 
+footer h4{
+    color: var(--tertiary-color);
+    display: flex;
+    margin: auto;
+}
+
 @media (min-width:600px){
     .c1{
         display: flex;
         width: 10%;
-        height: 100rem;
+        height: 97rem;
         position: fixed;
+        z-index: 10;
         left: 0;
     }
     .c2{
         width: 90%;
         margin-left: 10%;
-    }
-
-    .menu-list{
-        display: flex;
     }
 
     header .menu{
@@ -141,6 +163,24 @@ footer{
         margin: 0.7rem;
         font-size: 3.5rem;
         text-align: center;
+    }
+    .menu-list{
+        display: none;
+    }
+
+    .menu-icon{
+        display: flex;
+    }
+    
+    .menu-icon{
+        display: flex;
+        margin: auto;
+        color: var(--tertiary-color);
+        font-size: 3rem;
+    }
+    
+    .menu-icon ul li{
+        list-style: none;
     }
 
     footer{
@@ -170,7 +210,6 @@ footer{
 
     .c4{
         width: 50%;
-        order: 1;
     }
     .c5{
         display: block;
@@ -179,11 +218,20 @@ footer{
     .c6{
         display: block;
         width: 35%;
+        background-color: skyblue;
+    }
+    .menu-list{
+        display: flex;
+        color: aliceblue;
     }
     footer{
         width: 85%;
         position: absolute;
         right: 0;
         bottom: 0;
+        color: var(--tertiary-color);
+    }
+
+    footer h4{
     }
 }
