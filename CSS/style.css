@@ -5,6 +5,7 @@
 }
 html{
     font-size: 62.5%;
+    position: relative;
 }
 header{
     background-color: tomato;
@@ -73,12 +74,14 @@ footer{
         left: 0;
     }
     .c2{
-        width: 100%;
+        width: 90%;
+        margin-left: 10%;
     }
     footer{
         width: 90%;
         position: absolute;
         right: 0;
+        bottom: 0;
     }
 }
 
@@ -88,7 +91,13 @@ footer{
         height: 97rem;
     }
     .c2{
-        width: 100%;
+        width: 85%;
+        margin-left: 15%;
     }
-
+    footer{
+        width: 85%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
 }
