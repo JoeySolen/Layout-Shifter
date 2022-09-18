@@ -13,6 +13,8 @@ body{
     flex-wrap: wrap; /*Para que los div puedan reposicionarse si su tamaño lo permite a medida que crece el viewport*/
 }
 
+/*ENCABEZADO*/
+
 header{
     background-color: yellowgreen;
     width: 100%;
@@ -57,4 +59,33 @@ header nav{
     font-size: 3rem;
 }
 
+/*FIN ENCABEZADO*/
+
+/*CONTENIDO*/
+
+main{
+    background-color:turquoise;
+    width: 100%;
+    display: block;
+}
+
+aside{
+    background-color: tomato;
+}
+section{
+    background-color: steelblue;
+}
+
+/*FIN CONTENIDO*/
+
+/*PIE DE PÁGINA*/
+
+footer{
+    background-color: slateblue;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*FIN PIE DE PÁGINA*/
 
