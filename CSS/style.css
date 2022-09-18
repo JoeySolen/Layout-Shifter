@@ -6,7 +6,6 @@
 html{
     font-size: 62.5%;
 }
-
 header{
     background-color: tomato;
     width: 100%;
@@ -44,6 +43,10 @@ header{
     background-color: yellow;
 }
 
+.c3{
+    background-color: violet;
+}
+
 .c4{
     background-color: wheat;
 }
@@ -52,15 +55,40 @@ header{
     background-color: violet;
 }
 
+footer{
+    background-color: tomato;
+    width: 100%;
+    position: relative;
+    min-block-size: 150px;
+    min-height: 3rem;
+    right: 0;
+    bottom: 0;
+}
+
 @media (min-width:600px){
     .c1{
         width: 10%;
+        height: 100rem;
+        position: fixed;
+        left: 0;
     }
     .c2{
-        width: 90%;
+        width: 100%;
     }
-    .c3{
+    footer{
         width: 90%;
+        position: absolute;
+        right: 0;
+    }
+}
+
+@media (min-width:800px){
+    .c1{
+        width: 15%;
+        height: 97rem;
+    }
+    .c2{
+        width: 100%;
     }
 
 }
