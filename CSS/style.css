@@ -5,142 +5,62 @@
 }
 html{
     font-size: 62.5%;
-    min-height: 100%;
-    position: relative;
 }
-
-body{
-    display: flex; /*Usar esta propiedad para manipular los demás contenedores*/
-    flex-wrap: wrap; /*Para que los div puedan reposicionarse si su tamaño lo permite a medida que crece el viewport*/
-    margin-bottom: 3rem;
-}
-
-/*ENCABEZADO*/
 
 header{
-    background-color: yellowgreen;
+    background-color: tomato;
+    width: 100%;
+    min-block-size: 150px;
+    min-height: 5rem;
     position: fixed;
-    width: 100%;
-    height: 4rem;
+    top: 0;
 }
 
-header nav{
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+
+.c1,
+.c2,
+.c3,
+.c4,
+.c5{
+    width: 100%;
+    min-block-size: 150px;
+    min-height: 150px;
+}
+
+.c3{
+    height: auto;
+}
+
+.c1{
+    background-color: yellowgreen;
+}
+
+.c2{
     background-color: yellow;
-    position: relative;
-    display: flex;
-    margin: auto;
-    min-width: 20rem;
-    max-width: 102rem;
-    height: 4rem;
 }
 
-.items-nav-container{
-    display:inline-flex;
-    width: 100%;
+.c4{
+    background-color: wheat;
 }
 
-.logo{
-    display: flex;
-    width: 4rem;
-}
-
-.title{
+.c5{
     background-color: violet;
-    display: flex;
-    margin: auto;
 }
 
-.menu-container{
-    background-color: tomato;
-    position: relative;
-    right: 0;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    width: 4rem;
-    height: 4rem;
-    font-size: 3rem;
+@media (min-width:600px){
+    .c1{
+        width: 10%;
+    }
+    .c2{
+        width: 90%;
+    }
+    .c3{
+        width: 90%;
+    }
+
 }
-
-/*FIN ENCABEZADO*/
-
-/*CONTENIDO*/
-
-p{
-    font-size: 2rem;
-    padding: 1.5rem;
-    min-width: 20rem;
-    max-width: 102rem;
-    display: flex;
-    margin: auto;
-}
-main{
-    background-color:turquoise;
-    display: block;
-    width: 100%;
-    margin-top: 4rem;
-}
-
-aside{
-    background-color: tomato;
-}
-/* section{
-    background-color: steelblue;
-
-} */
-
-section .banner{
-    background-color: aliceblue;
-    min-width: 20rem;
-    max-width: 102rem;
-    display: flex;
-    margin: auto;
-}
-
-section .banner h2{
-    display: flex;
-    margin: auto;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-}
-
-.section2{
-    background-color: springgreen;
-    display: block;
-    min-width: 20rem;
-    max-width: 102rem;
-    margin: auto;
-}
-
-.section2 .first-content .pic1{
-    background-color: rgb(73, 12, 73);
-    display: block;
-    width: 100%;
-    height: 6rem;
-}
-.section2 .pic1-description{
-    background-color: rgb(216, 216, 216);
-    display: block;
-    width: 100%;
-}
-
-
-/*FIN CONTENIDO*/
-
-/*PIE DE PÁGINA*/
-
-footer{
-    background-color: slateblue;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    height: 3rem;
-    width: 100%;
-}
-
-footer .footer-description h4{
-    display: block;
-}
-
-/*FIN PIE DE PÁGINA*/
-
